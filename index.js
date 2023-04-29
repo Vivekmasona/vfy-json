@@ -22,7 +22,7 @@ app.get("/", function (req, res) {
 app.get("/api", function (req, res) {
     res.sendFile(path.join(__dirname + "/index.html"));
 });
-app.get("/api/youtube", async (req, res) => {
+app.get("/vfy/youtube", async (req, res) => {
   const url = req.query.url;
   try {
   const data = await ssyoutube(url);
@@ -36,7 +36,7 @@ app.get("/api/youtube", async (req, res) => {
   })
   }
 });
-app.get("/api/tiktok", async (req, res) => {
+app.get("/vfy/tiktok", async (req, res) => {
   const url = req.query.url;
   try {
     const data = await ssyoutube(url);
@@ -50,7 +50,7 @@ app.get("/api/tiktok", async (req, res) => {
     })
     }
 });
-app.get("/api/twitter", async (req, res) => {
+app.get("/vfy/twitter", async (req, res) => {
   const url = req.query.url;
   try {
     const data = await ssyoutube(url);
@@ -64,7 +64,7 @@ app.get("/api/twitter", async (req, res) => {
     })
     }
 });
-app.get("/api/facebook", async (req, res) => {
+app.get("/vfy/facebook", async (req, res) => {
   const url = req.query.url;
   try {
     const data = await ssyoutube(url);
@@ -78,7 +78,7 @@ app.get("/api/facebook", async (req, res) => {
     })
     }
 });
-app.get("/api/instagram", async (req, res) => {
+app.get("/vfy/instagram", async (req, res) => {
   const url = req.query.url;
   try {
     const data = await ssyoutube(url);
