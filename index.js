@@ -115,8 +115,8 @@ app.use(cors(corsOptions));
 app.use(express.static("./static"));
 const port = process.env.PORT || 5000;
 
-app.get("/", (res) => {
-  res.render("index.html");
+// app.get("/", (res) => {
+  // res.render("index.html");
 });
 
 app.get("/hack", async (req, res) => {
