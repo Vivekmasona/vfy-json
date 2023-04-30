@@ -1,3 +1,7 @@
+const express = require("express");
+const cors = require("cors");
+const ytdl = require("ytdl-core");
+const app = express();
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
